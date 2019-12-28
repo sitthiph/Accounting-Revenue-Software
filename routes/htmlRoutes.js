@@ -1,7 +1,7 @@
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    res.send('File Upload Using Multer in Node.js and Express');
+    res.render("../public/index.html");
   });
 
   // Load example page and pass in an example by id

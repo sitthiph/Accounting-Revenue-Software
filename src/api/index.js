@@ -1,11 +1,11 @@
 require("dotenv").config();
+require("./multer/multer");
 const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
 const helmet = require('helmet');
 const cors = require('cors');
-const multer = require('multer');
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
